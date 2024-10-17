@@ -1,0 +1,76 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #f4f4f4;
+}
+
+/* Main content styles */
+div {
+  text-align: center;
+  padding: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Product listing styles */
+ul li {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin: 10px auto;
+}
+
+ul li:hover {
+  background-color: #f4f4f4;
+}

@@ -1,0 +1,124 @@
+/* General Calculator Container */
+.calculator {
+    display: inline-block;
+    background: linear-gradient(145deg, #434343, #282828);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px rgba(159, 161, 106, 0.6), -4px -4px 15px rgba(255, 255, 255, 0.1);
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  /* Display Area */
+  .display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.6), inset -2px -2px 6px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .display input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2.5em;
+    text-align: right;
+    outline: none;
+    padding-right: 10px;
+  }
+  
+  .result {
+    color: #bbb;
+    font-size: 1.5em;
+    text-align: right;
+  }
+  
+  /* Button Grid */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 20px;
+    background: linear-gradient(145deg, #3e3e3e, #232323);
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  /* Button Hover and Active States */
+  button:hover {
+    background: linear-gradient(145deg, #4a4a4a, #292929);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    background: linear-gradient(145deg, #292929, #1c1c1c);
+  }
+  
+  /* Clear Button */
+  button:nth-child(1) {
+    background-color: #ff4d4d;
+  }
+  
+  button:nth-child(1):hover {
+    background-color: #ff6666;
+  }
+  
+  button:nth-child(1):active {
+    background-color: #e64545;
+  }
+  
+  /* Operator Buttons */
+  button:nth-child(2),
+  button:nth-child(3),
+  button:nth-child(4),
+  button:nth-child(8),
+  button:nth-child(12),
+  button:nth-child(16) {
+    background-color: #3b82f6;
+  }
+  
+  button:nth-child(2):hover,
+  button:nth-child(3):hover,
+  button:nth-child(4):hover,
+  button:nth-child(8):hover,
+  button:nth-child(12):hover,
+  button:nth-child(16):hover {
+    background-color: #4b92ff;
+  }
+  
+  button:nth-child(2):active,
+  button:nth-child(3):active,
+  button:nth-child(4):active,
+  button:nth-child(8):active,
+  button:nth-child(12):active,
+  button:nth-child(16):active {
+    background-color: #3572e6;
+  }
+  
+  /* Equal Button */
+  button:nth-child(15) {
+    background-color: #34d399;
+    grid-column: span 2;
+  }
+  
+  button:nth-child(15):hover {
+    background-color: #52e6b3;
+  }
+  
+  button:nth-child(15):active {
+    background-color: #2ec19f;
+  }
+  
